@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name"> Web Site Status</string>
+    <string name="uptime_apiKey">u101288-f19f18a00d3569cc653cab62</string>
+    <string name="time_zone">GMT-5</string>
+</resources>

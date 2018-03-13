@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "548738867028",
+    "firebase_url": "https://uptimerobot-f99c9.firebaseio.com",
+    "project_id": "uptimerobot-f99c9",
+    "storage_bucket": "uptimerobot-f99c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:548738867028:android:ef304a593beac9bc",
+        "android_client_info": {
+          "package_name": "com.seriousmonkey.uptimerobot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "548738867028-rar379ssn7ecs9890iugdaeb8vu8te1p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.seriousmonkey.uptimerobot",
+            "certificate_hash": "0a6bbfe0f7057f8c169eec436f79451d06053c10"
+          }
+        },
+        {
+          "client_id": "548738867028-qrb7k5kpvlv8pnrag3j0cp6atk5ni4s6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBGoZ_2j-DDA9Vajj7B_99hJDiK_4bti8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "548738867028-qrb7k5kpvlv8pnrag3j0cp6atk5ni4s6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
