@@ -32,12 +32,12 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
-
-import static android.R.attr.defaultValue;
+import java.util.Locale;
 
 
 public class MainActivity extends AppCompatActivity {
     public String timeZone;
+    private Locale appLocale;
 
     private GridView mDetailsGridView;
     private DetailItemAdapter mDetailItemAdapter;
@@ -60,6 +60,8 @@ public class MainActivity extends AppCompatActivity {
 
         mDetailItemAdapter = new DetailItemAdapter(this.getBaseContext(), mDetailItems);
         mDetailsGridView.setAdapter(mDetailItemAdapter);
+
+        appLocale = new Locale.Builder().setLanguage("en").setRegion("US").build();
 
         initRefreshButton();
         initActionBar();
@@ -167,8 +169,8 @@ public class MainActivity extends AppCompatActivity {
                         //outputString(lastDownTime);
                         //outputString("\n");
 
-                        double DownTimePercentage = monitor.getDownTimePercentage(Monitor.TimeDuration.DAY);
-                        String downtime = String.format("%1$.1f%%", DownTimePercentage);
+                        double upTimePercentage = 100 - monitor.getDownTimePercentage(Monitor.TimeDuration.DAY);
+                        String downtime = String.format(appLocale, "%1$.1f%%", upTimePercentage);
 
                         mDetailItems.add(new DetailItem(lastDownTime, monitor.friendly_name, downtime, "#ffffffff", monitor.getStatusColor()));
                     }
